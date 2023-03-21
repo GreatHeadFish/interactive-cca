@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: move;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes move {
+  0%   {background-color:red; transform: scale(1); left:0px; top:0px; opacity: 1;}
+  20%  {background-color:red; transform: scale(1.0, 0.8); left:800px; top:0px;opacity: 0.5}
+  40%  {background-color:blue; transform: rotate(90deg); left:0; top:800px;opacity: 1}
+  60%  {background-color:blue; transform: scale(1.0, 0.8); left:800px; top:800px;opacity: 0.5}
+  80% {background-color:red; transform:rotate(-90deg);  left:800px; top:0px;opacity:1}
+  100% {background-color:red; transform: scale(1); left:0px; top:0px;opacity:1}
+}
+</style>
+</head>
+<body>
+
+<p><b>
+</b>
+
+<div></div>
+
+</body>
+</html>
