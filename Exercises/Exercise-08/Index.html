@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    .responsive-image {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: 600px) {
+      .responsive-image {
+        background-image: url('small-image.jpg');
+        height: 200px; 
+      }
+    }
+
+    @media (min-width: 601px) and (max-width: 1200px) {
+      .responsive-image {
+        background-image: url('medium-image.jpg');
+        height: 400px; 
+      }
+    }
+
+    @media (min-width: 1201px) {
+      .responsive-image {
+        background-image: url('large-image.jpg');
+        height: 600px; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="responsive-image"></div>
+</body>
+</html>
