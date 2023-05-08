@@ -1,0 +1,116 @@
+body {
+	background-image: url('b.png');
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.title{
+	color: whitesmoke;
+	font-family: caviar dream;
+	font-size: 70px;
+	text-align: ;
+	padding: 15px;
+	position: absolute;
+
+
+}
+
+.text{
+	font-family: caviar dream;
+	font-size: 90px;
+	color: white;
+    padding: 80px;
+	position: absolute;
+
+}
+
+.image-1{
+  width: 500px;
+  top:100px;
+  left: 470px;
+  opacity: 1;
+  position: absolute;
+  animation-name: fly;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.image-1:hover{
+	opacity: 0.9;
+    animation: flyback 1s ease-in-out forwards;
+    animation-iteration-count: inherit;
+}
+
+@keyframes fly1{
+	0%{rotate:0deg}
+	50%{rotate: 45deg}
+	100%{otate:0deg;}
+}
+
+@keyframes fly{
+	0%{transform: scale(1.0);}
+	50%{transform: scale(0.8);}
+	100%{transform: scale(1.0);}
+}
+
+.image-2{
+  width: 550px;
+  top:400px;
+  left: 150px;
+  opacity: 1;
+  rotate: 0deg;
+  position: absolute;
+  animation-name: fly;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.image-2:hover{
+	opacity: 0.9;
+    animation: flyback 1s ease-in-out forwards;
+    animation-iteration-count: inherit;
+
+}
+
+@keyframes flyback {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(180deg) translate(0, 50%);
+  }
+  100% {
+    transform: rotate(360deg) translate(0, 0);
+  }
+}
+
+@keyframes fly2{
+	0%{transform:top:0px;rotate:0deg}
+	33%{rotate: -45deg}
+	100%{otate:0deg;}
+}
+
+.image-3{
+  width: 550px;
+  top:350px;
+  left: 900px;
+  opacity: 1;
+  position: absolute;
+  animation-name: fly;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.image-3:hover{
+	opacity: 0.9;
+    animation: flyback 1s ease-in-out forwards;
+    animation-iteration-count: inherit;
+}
+@keyframes fly3{
+	0%{rotate:0deg}
+	50%{rotate: -45deg}
+	100%{otate:0deg;}
+}
